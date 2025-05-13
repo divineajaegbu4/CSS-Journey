@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/table.challenge.css">
+</head>
+<body>
+    <table>
+        <caption>Simple table:</caption>
+        <thead>
+            <tr>
+                <th id="person">Person</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>March</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Bob</td>
+                <td>Frosty beginnings<br/>and resolutions<br/>abound</td>
+                <td>Hearts and groundhogs, winter's<br/>midpoint.</td>
+                <td>Lion to lamb, <br/>spring's hopeful <br/>arrival</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="eve-table">
+        <caption>Complex table:</caption>
+        <thead>
+            <tr>
+                <th id="person2">Person</th>
+                <th id="Q1" colspan="4">Q1</th>
+            </tr>
+ 
+            <tr>
+
+                <th></th>
+                <th id="jan">Jan</th>
+                <th colspan="2" id="feb">Feb</th>
+                <th>March</th>
+            </tr>
+          
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Eve</td>
+                <td id="reject" rowspan="2">I will never do that again</td>
+                <td>Honey never spoils</td>
+                <td>Life changes every day. We grow, learn, and face new things. 
+                    Even small steps matter. Stay hopeful and keep going.
+                </td>
+
+                <td>Life changes every day. We grow, learn, and face new things. 
+                    Even small steps matter. Stay hopeful and keep going. Stay hopeful and keep going.
+                    <br/>
+                    <br/>
+                    After small steps matter. Stay hopeful and keep going.
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>Years changes every day. We grow, learn, and face new things. 
+                    Even small steps matter. Stay hopeful and keep going.</td>
+                    <td>Through changes every day. We grow, learn, and face new things. 
+                        Even small steps matter. Stay hopeful and keep going.</td>
+            </tr>
+
+            <tr>
+                <td>Bob</td>
+                <td>Years changes every day. We grow, learn, and face new things. </td>
+                <td colspan="2">Hearts changes every day. We grow, learn, and face new things.</td>
+                <td>Years changes every day. We grow, learn</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

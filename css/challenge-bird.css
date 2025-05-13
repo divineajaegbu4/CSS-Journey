@@ -1,0 +1,33 @@
+img {
+    width: 150px;
+    height: 100px;
+}
+
+main {
+    background-color: rgb(43, 170, 43);
+    font-family: 'Poppins', sans-serif;
+    width: 900px; 
+    height: 680px; 
+    padding: 2px 6px;
+}
+
+header {
+    display: flex;
+    gap: 540px;
+    /* text-shadow: 20em; */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 120px;
+    background-color: rgb(37, 220, 37);
+    padding: 15px;
+}
+
+ li a {
+    color: black;
+    font-weight: 600;
+    
+}
+
