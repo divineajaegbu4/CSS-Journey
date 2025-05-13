@@ -1,0 +1,18 @@
+/* Descendant combinator */
+.special p {
+    color: purple;
+}
+
+ul > li {
+    border-top: 5px solid red;
+    text-align: center;
+}
+
+/* Child combinators */
+div > p {
+    color: red;
+}
+
+h1 ~ p {
+    background-color: chocolate;
+}

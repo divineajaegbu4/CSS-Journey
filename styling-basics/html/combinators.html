@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/combinators.css">
+</head>
+<body>
+    <ul>
+  <li>Unordered item</li>
+  <li>
+    Unordered item
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ol>
+  </li>
+</ul>
+
+<!-- Descendant combinator -->
+<div class="special">
+  <section>
+    <p>✅ This will be red</p>
+  </section>
+</div>
+
+
+<!-- Child combinator -->
+<div>
+  <p>✅ This will be blue</p>
+  <section>
+    <p>❌ This won't be blue</p>
+  </section>
+</div>
+
+
+<article>
+  <p>loving mother</p>
+  <h1>A heading</h1>
+  <p>I am a paragraph.</p>
+  <div>I am a div</div>
+  <p>I am another paragraph.</p>
+</article>
+
+
+</body>
+</html>

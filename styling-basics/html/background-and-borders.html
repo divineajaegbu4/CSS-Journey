@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds and borders</title>
+    <link rel="stylesheet" href="../css/backgrounds-and-borders.css">
+</head>
+<body>
+<div class="box">
+  <h2>Background Colors</h2>
+  <p>Try changing the background <span>colors</span>.</p>
+</div>
+
+<div class="wrapper">
+  <div class="img-box a"></div>
+  <div class="img-box b"></div>
+</div>
+
+<div class="repeat-box"></div>
+
+<h2>background gradients</h2>
+<div class="gradient-wrapper">
+  <div class="gradient-box a"></div>
+  <div class="gradient-box b"></div>
+</div>
+
+<h2>Multiple backgrounds</h2>
+<div class="multiple-backgrounds-wrapper">
+  <div class="multiple-backgrounds-box"></div>
+</div>
+
+
+<h2>Background attachement</h2>
+<main class="background-attachement-wrapper">
+   <article>
+    <section class="scroll">
+        <div class="img-content">
+        background-attachment: scroll causes the element's background to be fixed to the page, 
+        so that it scrolls when the page is scrolled. If the element content is scrolled, the background does not move.
+        </div>
+    </section>
+
+    <section class="fixed">
+        <div class="img-content">
+        background-attachment: fixed causes an element's background to be fixed to the viewport, 
+        so that it doesn't scroll when the page or element content is scrolled. It will always 
+        remain in the same position on the screen.
+        </div>
+    </section>
+
+    <section class="local">
+        <div class="img-content">
+        background-attachment: local, new to CSS3, causes an element's background to be fixed to the actual element itself. 
+        So When the page is scrolled, the element's background will move along with it only 
+        if the element does so (so not in the case of elements with position: fixed.) 
+        When the element's content is scrolled, the background will scroll along with it.
+        </div>
+    </section>
+   </article>
+</main>
+
+<h2>Border</h2>
+<div class="border-box">
+  <h2 class="border">Borders</h2>
+  <p>Try changing the borders.</p>
+</div>
+
+
+</body>
+</html>

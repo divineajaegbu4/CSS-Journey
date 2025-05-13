@@ -1,0 +1,63 @@
+/* Select all element that has class */
+li[class] {
+    margin: 8px 0;
+}
+
+/* Select all elements that have a class */
+li[class="a"] {
+    padding: 30px 0;
+}
+
+/* Select all elements that contain a but have two class */
+li[class~="a"] {
+    background-color: purple;
+    color: white;
+}
+
+/* Select elements that begin with f */
+li[class^="f"] {
+   color: red;
+}
+
+/* Select elements that end with c */
+li[class$="c"] {
+    background-color: blue;
+}
+
+/* Select all elements that contain b */
+li[class*="b"]  {
+    text-align: center;
+}
+
+a[target="_blank"] {
+    color: red;
+}
+
+/* Where to use attribute seletors
+1.Styling form fields by type
+2.Styling links by target
+3.Applying styles based on data-* attributes
+*/
+
+/* a[href^="https://"] {
+  color: green;
+}
+
+img[src$=".svg"] {
+  border: 1px dashed gray;
+} */
+
+/* [data-theme="dark"] {
+  background-color: black;
+  color: white;
+} */
+
+/* a[target="_blank"]::after {
+  content: " ↗";
+} */
+
+/* input[type="email"] {
+  border: 2px solid green;
+} */
+
+

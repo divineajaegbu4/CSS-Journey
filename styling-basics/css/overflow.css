@@ -1,0 +1,19 @@
+  /* overflow: hidden auto;
+    hidden overflow-x while auto overflow-y
+  */
+
+.box {
+  border: 1px solid #333333;
+  width: 250px;
+  height: 100px;
+  /* overflow-y: scroll; */
+  overflow-y: auto; /* perfect*/
+}
+
+.word {
+  border: 1px solid #333333;
+  width: 100px;
+  font-size: 250%;
+  word-break: break-all;
+  /* overflow-wrap: break-word; */
+}

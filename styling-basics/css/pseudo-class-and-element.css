@@ -1,0 +1,60 @@
+/* pseudo class starts with one colon e.g :hover
+   while
+   pseudo element starts with two colon e.g ::before
+*/
+
+a:link,
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+
+div p:first-child {
+    border: 1px solid black;
+}
+
+/* ::before and ::after pseudo element
+   It's maintainable and accessible to use to inserting icons and also empty string not texts
+*/
+.box::before {
+    content: "This should show before the content. ";
+}
+
+.box::after {
+    content: " ➥";
+    color: red;
+}
+
+.empty-string::before {
+   content: "";
+   display: block;
+   width: 700px;
+   height: 100px;
+   background: purple;
+   border: 3px solid black;
+   color: white;
+}
+
+.empty-string::after {
+   content: "";
+   display: block;
+   width: 5px;
+   height: 900px;
+   background: purple;
+   border: 1px solid black;
+   color: white;
+}
+/* using pseudo element */
+/* p::first-line {
+    color: red;
+}
+
+article p::first-line {
+  font-size: 120%;
+  font-weight: bold;
+  background-color: crimson;
+} */

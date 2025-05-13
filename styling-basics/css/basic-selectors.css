@@ -1,0 +1,65 @@
+body {
+    background-color: purple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+*:hover {
+    border: 5px solid black;
+}
+
+p *:first-child {
+    color: yellowgreen;
+}
+
+p + p.highlight {
+    background-color: crimson;
+}
+
+h1.highlight {
+    background-color: chocolate;
+    padding: 10px;
+}
+
+.notebox {
+    text-align: center;
+}
+
+.notebox.danger {
+    background-color: brown;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* readable */
+/* h1, .special {
+  color: blue;
+} */
+
+/* More readable */
+
+/* h1,
+.special {
+  color: blue;
+} */
+
+#main-header,
+.pink-color,
+p {
+    color: pink;
+}
+
+
+
+/* 
+Use id when the element is unique on the page.
+Use class when the style or behavior is shared across multiple elements.
+
+Use id for single-use elements like a header or footer, and class for reusable styling like buttons or sections.
+*/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/handling-conflict.css">
+</head>
+<body>
+    <h1>This is my heading.</h1>
+    <h1 class="main-heading">This is my heading.</h1>
+
+    <!-- 
+      cite: This tells the browser (and tools like search engines 
+      or screen readers) where the quote came from, but users won't see the URL unless you show it manually.
+    -->
+
+    <blockquote cite="https://example.com/article-about-success">
+  <p>Success is not final, failure is not fatal: It is the courage to continue that counts.</p>
+</blockquote>
+
+<!-- You can add it inside with a <cite> tag: -->
+
+    <blockquote cite="https://example.com/winston-churchill-quotes">
+  <p>Success is not final, failure is not fatal: It is the courage to continue that counts.</p>
+  <cite><a href="https://example.com/winston-churchill-quotes">Winston Churchill</a></cite>
+</blockquote>
+
+<ul>
+  <li>Default <a href="#">link</a> color</li>
+  <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+  <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+  <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+</ul>
+
+
+<blockquote>
+  <p>This blockquote is styled</p>
+</blockquote>
+
+<blockquote class="fix-this">
+  <p>This blockquote is not styled</p>
+</blockquote>
+
+
+</body>
+</html>

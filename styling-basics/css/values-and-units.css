@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.wrapper {
+  font-size: 1.5em;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.px {
+  width: 200px;
+}
+
+.vw {
+  width: 10vw;
+}
+
+.em {
+  width: 10em;
+}
+
+.box {
+  background-color: lightblue;
+  border: 5px solid darkblue;
+  padding: 10px;
+  margin: 1em 0;
+}
+
+
+.box2 {
+  background-color: lightblue;
+  border: 5px solid darkblue;
+  padding: 10px;
+  margin: 1em 0;
+}
+.wrapper2 {
+  width: 400px;
+  border: 5px solid rebeccapurple;
+}
+
+.px {
+  width: 200px;
+}
+
+.percent {
+  width: 40%;
+}
+
+/* Set root font size */
+    html {
+      font-size: 16px;
+    }
+
+    /* Use rem for consistent spacing and text size */
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #4a90e2;
+      padding: 1rem;
+      color: white;
+    }
+
+    main {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    /* Use % for responsive layout */
+    .sidebar {
+      width: 25%; /* 25% of main container */
+      background-color: #f0f0f0;
+      padding: 1rem;
+    }
+
+    .content {
+      width: 75%;
+      background-color: #fff;
+      padding: 1.5rem;
+      font-size: 1rem;
+    }
+
+.container {
+  background-image: url(https://mdn.github.io/shared-assets/images/examples/balloons.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 20px;
+}
+
+.opacity {
+  margin: 40px auto;
+  width: 200px;
+  background-color: lightblue;
+  border: 5px solid darkblue;
+  padding: 10px;
+  opacity: 0.6;
+}
+
+/* color: rgb(4 222 23 0) it takes 3 parameters, red, green and blue the fourth value is the opacity */
+
+
+    /* Use em for nested spacing relative to element itself */
+    .content p {
+      margin-bottom: 2em; /* space between paragraphs */
+    }
+
+/* Yes — using % for width is a smart and common practice, especially in responsive web design. It allows your
+ layout to adapt to different screen sizes without hard-coding pixel values. 
+ 
+ Flexible columns (width: 50%, 33.33%, etc.)
+
+Images that scale with their container (img { width: 100%; height: auto; })
+
+Sidebars and content areas that share space
+ 
+ */
+   
+ /* rem: Used for padding and base font size for consistent spacing.
+
+%: Used to make the layout responsive (25% sidebar, 75% content).
+
+em: Used for spacing between elements relative to the element’s own size. */
+
+
+/* But if you start with em in one part, stick with it in that context for consistency. And the same goes for rem. 
+It's all about maintaining that consistency across your code. */
+
+/* 
+If you're focusing on local, component-based scaling, em is great.
+
+If you want global control over the layout and typography, rem is better because it’s based on a fixed root value.
+
+The default size of html is 16px
+*/

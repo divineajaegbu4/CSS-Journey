@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.wrapper > * {
+  margin: 20px;
+}
+
+.box {
+  border: 5px solid darkblue;
+  width: 200px;
+}
+
+.balloon {
+  max-width: 100%;
+  /* object-fit: contain;
+  height: 100%;
+  width: 100%; */
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.wrapper > * {
+  margin: 20px;
+}
+
+.box2 {
+  border: 5px solid darkblue;
+  width: 200px;
+  height: 200px;
+}
+
+.object-fit {
+  height: 100%;
+  width: 100%;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+/* grid */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 20px;
+}
+
+.grid-wrapper > div {
+  background-color: rebeccapurple;
+  border-radius: 0.5em;
+}
+
+/* form */
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #000;
+  margin: 0 0 1em 0;
+  padding: 10px;
+  width: 80%;
+}
+
+input[type="submit"] {
+  border: 3px solid #333;
+  background-color: #999;
+  border-radius: 5px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #333;
+}
+
+
+/* In addition to the rules mentioned above, you should also set overflow: auto on <textarea> elements to 
+stop some older browsers from showing a scrollbar when there is no need for one: */
+
+/* textarea {
+    overflow: auto;
+} */
+

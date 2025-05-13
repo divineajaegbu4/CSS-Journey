@@ -1,0 +1,56 @@
+body {
+    color: green;
+}
+
+/* You can only inherit from parents not from child */
+.my-class-1 a {
+    color: inherit;
+}
+
+.my-class-2 a {
+    color: initial;
+}
+
+.my-class-3 a {
+    color: unset;
+}
+
+ul {
+    color: purple;
+}
+
+h1 {
+    color: crimson;
+}
+
+/* The last one won */
+h1 {
+    color: blue;
+}
+
+
+
+/* class, attribute selectors and pseudo classes has
+   more weight than pseudo element and elemen selectors
+*/
+
+.main-heading {
+    color: red;
+}
+
+
+h1 {
+    color: blue;
+}
+
+blockquote {
+  background-color: orange;
+  border: 2px solid blue;
+}
+
+.fix-this {
+  all: unset;
+}
+
+
+

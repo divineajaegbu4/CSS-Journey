@@ -1,0 +1,117 @@
+.box {
+  border: 5px solid darkblue;
+}
+
+/* Giving an element size is called extrinsic size while
+   element that has no size is called instrinsic size
+*/
+
+body {
+  font: 1.2em sans-serif;
+}
+.wrapper {
+  display: flex;
+}
+
+.wrapper > * {
+  margin: 20px;
+}
+
+.wrapper-box {
+  border: 5px solid darkblue;
+  height: 100px;
+  width: 50%;
+}
+
+
+/* Using % for margin, padding, height has strange behavior */
+.content-box {
+  border: 5px solid darkblue;
+  width: 200px;
+  margin: 10%;
+  padding: 10%;
+}
+
+.wrapper-min-box {
+  border: 5px solid darkblue;
+  min-height: 100px;
+  width: 200px;
+}
+
+
+/* As an example, if you were to set width: 100% on an image, and its intrinsic width was smaller than its container, 
+the image would be forced to stretch and become larger, causing it to look pixelated.
+
+If you instead use max-width: 100%, and its intrinsic width is smaller than its container, 
+the image will not be forced to stretch and become larger, thus preventing pixelation. */
+
+
+.width-box {
+  width: 200px;
+}
+
+.width {
+  width: 100%;
+}
+
+.max {
+  max-width: 100%;
+}
+
+.min {
+  min-width: 100%;
+}
+
+/* Note: Downloading overly large images will cause your site to become slow, 
+and it can cost users more money if they are on a metered connection. 
+*/
+
+/* .container {
+  max-width: 1200px;
+  width: 100%; /* Fill available space up to max 
+} 
+
+The meaning of the code: 
+
+width: 100%;
+This means the container will try to take 100% of the available width of its parent.
+
+max-width: 1200px;
+However, it will never grow beyond 1200px, even if the parent is wider than that.
+*/
+
+.viewport-box {
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}
+
+
+/* Sizing things according to the viewport can be useful in your designs. For example, 
+if you want a full-page hero section to show before the rest of your content, 
+making that part of your page 100vh high will push the rest of the content below the viewport,
+ meaning that it will only appear once the document is scrolled. 
+ */
+
+ /*  What They Are:
+1vh = 1% of the viewport height
+
+1vw = 1% of the viewport width
+
+So:
+
+100vh = full height of the screen
+
+100vw = full width of the screen
+ */
+
+ /* | Use Case                        | Unit       | Why it works well                                           |
+| ------------------------------- | ---------- | ----------------------------------------------------------- |
+| Full-page sections (e.g., hero) | `100vh`    | Makes the section fill the screen vertically                |
+| Centering content vertically    | `vh`       | Useful with Flexbox or grid to center within the viewport   |
+| Responsive font sizing          | `vw`, `vh` | Font size grows with screen size (careful with readability) |
+| Full-width elements             | `100vw`    | Makes sure the element spans the whole screen               |
+
+*/
+
