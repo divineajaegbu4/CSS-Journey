@@ -1,0 +1,17 @@
+/* 🧱 FLEXBOX PROPERTIES
+📦 Parent Container (display: flex)
+Property	Common Values	What It Does
+display	flex, inline-flex	Starts flexbox
+flex-direction	row, row-reverse, column, column-reverse	Direction of items
+flex-wrap	nowrap, wrap, wrap-reverse	Whether items wrap
+justify-content	flex-start, center, flex-end, space-between, space-around, space-evenly	Aligns items horizontally
+align-items	stretch, center, flex-start, flex-end, baseline	Aligns items vertically
+align-content	stretch, center, flex-start, flex-end, space-between, space-around	Aligns lines (when wrapped)
+
+📦 Children (flex items)
+Property	Common Values	What It Does
+flex	none, auto, 1, 2, 1 1 auto, 0 1 auto	Shorthand for grow, shrink, and basis
+flex-grow	0, 1, 2, etc.	How much it grows
+flex-shrink	0, 1, 2, etc.	How much it shrinks
+flex-basis	auto, 100px, 20%, etc.	Initial size before growing/shrinking
+align-self	Same values as align-items	Aligns one item differently */

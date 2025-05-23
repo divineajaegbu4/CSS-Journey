@@ -1,0 +1,87 @@
+h1 {
+  text-shadow:
+    1px 1px 1px red,
+    2px 2px 1px red;
+    text-align: center;
+
+}
+
+.line-break {
+    text-align-last: center;
+}
+
+
+p:not(.ltr p, .rtl p) {
+    /* color: red; */
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration: underline purple dashed;
+    line-height: 1.6;
+    /* text-shadow: -4px -4px 5px red; */
+    /* text-decoration: underline overline line-through; */
+    /* font-family: "Trebuchet MS", Verdana, sans-serif; */
+}
+
+p::first-line {
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}
+
+.indent {
+    text-indent: 5rem;
+    word-break: keep-all;
+    text-align-last: right;
+    /* white-space: break-space; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+}
+
+.over-wrap {
+    overflow-wrap: anywhere;
+}
+
+/* fonts
+   https://en.wikipedia.org/wiki/Core_fonts_for_the_Web
+*/
+
+/* Text shadow
+   https://www.sitepoint.com/moonlighting-css-text-shadow/
+*/
+
+.ltr p, 
+.rtl p {
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+  
+
+  /* Both of the following are required for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow-string {
+  text-overflow: " [..]";
+}
+
+
+
+.ltr > p {
+  direction: ltr;
+}
+
+.rtl > p {
+  direction: rtl;
+}
+
+
+

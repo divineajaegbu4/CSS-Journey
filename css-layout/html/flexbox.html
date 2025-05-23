@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../css/flexbox.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+    <section>
+      <article class="first-article">
+        <h2>First article</h2>
+        <p>Content…</p>
+      </article>
+      <article>
+        <h2>Second article</h2>
+        <p>Content…</p>
+      </article>
+      <article>
+        <h2>Third article</h2>
+        <p>Content…</p>
+      </article>
+      <article>
+        <h2>Fourth article</h2>
+        <p>Content…</p>
+      </article>
+      <article>
+        <h2>Fifth article</h2>
+        <p>Content…</p>
+      </article>
+    </section>
+
+    <!-- FLEX: Big block -->
+    <div style="display: flex; border: 1px solid red">
+      <div>Item 1</div>
+      <div>Item 2</div>
+    </div>
+
+    <!-- INLINE-FLEX: Inline with text -->
+    <p>
+      Some text
+      <span style="display: inline-flex; border: 1px solid blue">
+        <span>👍</span>
+        <span>Like</span>
+      </span>
+      more text.
+    </p>
+
+    <!-- flex shrink -->
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+
+    <div class="wrapper">
+      <button>Smile</button>
+      <button>Laugh</button>
+      <button>Wink</button>
+      <button>Shrug</button>
+      <button>Blush</button>
+    </div>
+
+    <div class="flex">
+  <div class="item a">Item A</div>
+  <div class="item b">Item B</div>
+  <div class="item c">Item B</div>
+  <div class="item d">Item B</div>
+  <div class="item e">Item B</div>
+</div>
+
+  </body>
+</html>

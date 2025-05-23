@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border: 7px solid red;
+  font-family: "Inter", sans-serif;
+}
+
+.header-title {
+  font-weight: 400;
+  padding: 2rem 7rem;
+}
+
+.main-nav {
+  background-color: black;
+  margin: 0.7rem 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0.4rem 1.3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.article-title {
+    margin: 1.2rem 0 1rem 0;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.article-img {
+    float: left;
+    padding-right: 0.9rem;
+    max-width: 10%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.article-text {
+    margin-bottom: 1rem;
+}
+
+.sidebar-figure {
+    border: 5px solid red;
+    display: grid;
+    /* grid-template-columns: repeat(2, 140px); */
+   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+
+
+
+

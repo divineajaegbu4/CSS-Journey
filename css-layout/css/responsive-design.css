@@ -1,0 +1,146 @@
+/* Step 1: Mobile style (default) */
+body {
+  font-size: 16px;
+  background: pink;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FLEXBOX and CSS GRID are responsive by default */
+@media (min-width: 37.5rem) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .col1 {
+    flex: 1;
+    margin-right: 5%;
+  }
+
+  .col2 {
+    flex: 2;
+  }
+}
+
+@media screen and (min-width: 56.25rem) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Step 2: Tablet and up (screen is getting bigger) */
+@media (min-width: 48rem) {
+  body {
+    font-size: 18px;
+    background: lightblue;
+  }
+}
+
+/* If you ever want to print a webpage in a special style, you’ll do something like:
+@media print {
+  body {
+    color: black;
+    background: white;
+  }
+} 
+  */
+/* 
+ What's the difference?
+1. @media (min-width: ...)
+This means: "Apply these styles to any type of device (screen, print, etc.)"
+
+It’s simple, cleaner, and works for 99% of websites.
+
+Most people use this now ✅
+
+2. @media screen and (min-width: ...)
+This means: "Apply only when the device is a screen (not a printer or projector)."
+
+It's more specific — mainly used when:
+
+You’re also writing @media print styles.
+
+You want to exclude printers. */
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+This will work only on screens (like phones, tablets, computers). */
+
+/* Responsive Typograph
+   Responsive typography means making sure your text looks good and is easy to
+    read on all screen sizes — from tiny mobile phones 📱 to big desktop computers 
+
+    ------------------
+     Using Flexible Units like rem, em, or vw
+*/
+
+h1 {
+  font-size: calc(1.5rem + 4vw);
+}
+/* ✅ What it does:
+1.5rem: Sets a base size (around 24px if 1rem = 16px).
+
+4vw: Adds 4% of the viewport width on top of that.
+
+As the screen gets wider, the text size grows.
+
+As the screen gets smaller, the text shrinks.
+
+⚠️ But there's a problem:
+Just like with pure vw, this formula does not set a maximum or minimum limit. That means:
+
+On very small screens, the heading might become too small to read.
+
+On very large screens, it might become too huge and break layout. */
+
+
+/* Best Alternatvie but don't use it too much */
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* ✅ Best Practice: Where and When to Use clamp()
+Use on	Use clamp()?	Why?
+h1, h2, big titles	✅ Yes	Looks great across screens
+Paragraph text (p)	⚠️ Maybe	Use rem unless scaling is needed
+Buttons, nav labels	⚠️ Maybe	Simple rem is usually enough
+Spacing (padding, gap)	✅ Yes	Helps spacing adjust nicely */
+
+/* This means:
+
+Don’t go below 1.5rem
+
+Try to use 5vw (5% of screen width)
+
+Don’t go above 3rem */
+
+/* font-size: clamp(min, preferred, max); */
+/* Apply clamp() mostly to font sizes, padding, or margins where it really helps. */
+
+/* body {
+  font-size: 5vw;
+}
+
+ Users cannot zoom in on the text using their browser or device settings, because the font size is locked to the viewport width.
+
+On small screens, text may be too small.
+
+On large screens, it may be way too big.
+
+Users with vision problems can’t scale the text properly. */
+
+
+
+

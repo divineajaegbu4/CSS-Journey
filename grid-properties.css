@@ -1,0 +1,20 @@
+/* 🧮 CSS GRID PROPERTIES
+🧱 Parent Container (display: grid)
+Property	Common Values	What It Does
+display	grid, inline-grid	Starts grid layout
+grid-template-columns	100px 1fr 2fr, repeat(3, 1fr)	Defines column sizes
+grid-template-rows	50px auto, repeat(2, 1fr)	Defines row sizes
+grid-template-areas	"header header" "sidebar main" "footer footer"	Layout using named areas
+grid-gap (or gap)	10px, 1rem, 20px 10px	Space between rows/columns
+justify-items	start, end, center, stretch	Aligns items horizontally
+align-items	start, end, center, stretch	Aligns items vertically
+justify-content	start, end, center, space-between, stretch	Aligns grid as a whole (horizontal)
+align-content	start, end, center, space-between, stretch	Aligns grid as a whole (vertical)
+
+📦 Children (grid items)
+Property	Common Values	What It Does
+grid-column	1 / 3, span 2	Position in columns
+grid-row	2 / 4, span 1	Position in rows
+grid-area	header, sidebar, etc. (must match grid-template-areas)	Place using a name
+justify-self	start, end, center, stretch	Aligns individual item horizontally
+align-self	start, end, center, stretch	Aligns individual item vertically */

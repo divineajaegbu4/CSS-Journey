@@ -1,0 +1,79 @@
+body {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+p {
+   line-height: 1.4;
+}
+
+a {
+  /* outline-color: red; */
+}
+
+a:focus {
+  text-decoration: none;
+  background: #bae498;
+  outline: 3px solid red;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: #a5c300;
+}
+
+a:hover {
+  text-decoration: none;
+  background: #cdfeaa;
+}
+
+a:active {
+    background-color: #6900ff;
+  color: #cdfeaa;
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.25em;
+
+  background-size: 100%;
+  background-image: url("https://img.freepik.com/free-psd/realistic-star-isolated_23-2151547714.jpg?semt=ais_hybrid&w=740");
+}
+
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+
+.container a {
+  flex: 1;
+  text-decoration: none;
+  outline-color: transparent;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+.container a:link,
+.container a:visited,
+.container a:focus {
+  background: palegoldenrod;
+  color: black;
+}
+
+.container a:hover {
+  background: orange;
+}
+
+.container a:active {
+  background: darkred;
+  color: white;
+}

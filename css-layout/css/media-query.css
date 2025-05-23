@@ -1,0 +1,113 @@
+h2 {
+  background-color: crimson;
+  color: white;
+  padding: 1rem;
+  max-width: 70%;
+  border-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    color: blue;
+  }
+}
+
+/* Portrait often matches small max-width (like max-width: 480px)
+
+Landscape often matches larger min-width (like min-width: 671px) */
+
+@media (orientation: portrait) {
+  h2 {
+    background-color: purple;
+  }
+}
+
+@media (orientation: landscape) {
+  h2 {
+    background-color: orange;
+  }
+}
+
+/* the hover media feature was introduced. This feature means you can test
+  if the user has the ability to hover over an element, which essentially
+   means they are using some kind of pointing device; touchscreen and keyboard navigation does not hover. */
+
+@media screen and (hover: hover) {
+  body:hover {
+    color: white;
+    background: black;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  body {
+    color: rgba(0, 0, 0, 0.718);
+  }
+}
+
+/* Start from 30em and stop at 50em */
+@media (min-width: 30rem) and (max-width: 50rem) {
+  /* … */
+  h1 {
+    background-color: brown;
+    color: white;
+  }
+}
+
+
+
+
+@media (min-width: 50rem) {
+  /* Desktop styles */
+  h1 {
+    background-color: blueviolet;
+  }
+}
+
+
+/* Using pointer, coarse, hover, none etc */
+@media (min-width: 56.25rem) and (pointer: coarse) {
+  .nav-link {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+/* 
+🎯 What is any-pointer or any-hover?
+These check all available input devices.
+For example, some laptops have both a touchscreen and a mouse. */
+
+@media (any-pointer: coarse) {
+  /* At least one pointer is coarse (like finger) */
+}
+
+@media (any-hover: hover) {
+  /* At least one pointer supports hover */
+}
+
+/* Detect mouse/trackpad (fine pointer): */
+@media (pointer: fine) {
+  button:hover {
+    background-color: lightblue;
+  }
+}
+
+/* Detect no pointer */
+
+@media (pointer: none) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+/* Detect finger/touch (coarse pointer): */
+@media (pointer: coarse) {
+  button {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
