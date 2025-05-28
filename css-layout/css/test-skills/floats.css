@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 100rem;
+  min-width: 30rem;
+}
+
+
+/* TASK 1 */
+
+.box {
+    border: 5px solid red;
+    max-width: 25rem;
+    height: 120px;
+    padding: 1rem;
+}
+
+.float {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-right: 1.5rem;
+
+}
+
+.float1 {
+    float: left;
+}
+
+.float2 {
+    float: right;
+}
+
+p {
+    /* text-align: center; */
+}
+
+

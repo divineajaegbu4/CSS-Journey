@@ -61,6 +61,8 @@ article {
 After that, the rest of the available space will be shared according to the proportion units.
 " You'll see a difference in how the space is shared. */
 
+/* flex-grow: 2, flex-shrink: 1, flex-basis: 100px */
+
 article:nth-of-type(3) {
   flex: 2 1 100px;
 }

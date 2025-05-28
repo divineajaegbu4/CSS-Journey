@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID</title>
+    <link rel="stylesheet" href="../../css/test-skills/grid.css" />
+  </head>
+  <body>
+    <!-- TASK1 -->
+    <div class="grid">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+
+    <!-- TASK2 -->
+    <div class="grid-wrap">
+      <div class="item item1">
+        The CSS code grid-template-columns: repeat(auto-fit, minmax(50px,
+        auto)); combined with grid-auto-rows: minmax(100px, auto); creates a
+        flexible and responsive grid layout that can adjust itself based on the
+        available screen space and the size of the content inside each grid
+        item. Let’s break it down in simple terms. First, the
+        grid-template-columns part tells the browser how to arrange the columns
+        in the grid. By using repeat(auto-fit, minmax(50px, auto)), you're
+        saying, “Hey browser, try to fit as many columns as you can on the
+        screen.” Each of those columns must be at least 50 pixels wide, but they
+        can grow wider if there is enough space. The auto-fit part is very
+        clever because it automatically adds or removes columns based on the
+        screen size, so the grid looks good on both small and big screens. Then,
+        the minmax(50px, auto) part means each column cannot be smaller than 50
+        pixels, but it can grow as big as needed to fit the content inside. That
+        helps keep your layout from getting too squished on tiny screens, while
+        still being flexible on large ones. Now, let’s talk about the rows. The
+        grid-auto-rows: minmax(100px, auto); rule tells the browser how tall
+        each automatically created row should be. In this case, it means every
+        new row should be at least 100 pixels tall, but it can grow taller if
+        the content inside that row is too big to fit. This helps prevent
+        overlapping or cut-off content. So, for example, if one grid item has
+        just a short sentence, it will only take up 100 pixels in height. But if
+        another item has a long paragraph or a tall image, the row will
+        automatically grow taller to fit everything nicely. This keeps your
+        design looking neat and clean without having to manually set heights for
+        every row. Overall, this grid setup is great for building responsive
+        websites because it allows your layout to adapt beautifully across
+        different devices and screen sizes. You don’t have to worry about your
+        content overflowing or looking messy. It also helps you avoid writing
+        lots of extra media queries, because the layout automatically adjusts
+        based on the space and the content. This kind of smart layout is a key
+        part of modern web design, and using it means you're building your
+        website the right way — clean, flexible, and future-proof.
+      </div>
+      <div class="item item2">Two</div>
+    </div>
+
+    <!-- TASK3 -->
+    <div class="grid-areas">
+      <div class="grid-item one">
+        The CSS code grid-template-columns: repeat(auto-fit, minmax(50px,
+        auto)); combined with grid-auto-rows: minmax(100px, auto); creates a
+        flexible and responsive grid layout that can adjust itself based on the
+        available screen space and the size of the content inside each grid
+        item. Let’s break it down in simple terms. First, the
+        grid-template-columns part tells the browser how to arrange the columns
+        in the grid. By using repeat(auto-fit, minmax(50px, auto)), you're
+        saying, “Hey browser, try to fit as many columns as you can on the
+        screen.” Each of those columns must be at least 50 pixels wide, but they
+        can grow wider if there is enough space. The auto-fit part is very
+        clever because it automatically adds or removes columns based on the
+        screen size, so the grid looks good on both small and big screens. Then,
+        the minmax(50px, auto) part means each column cannot be smaller than 50
+        pixels, but it can grow as big as needed to fit the content inside. That
+        helps keep your layout from getting too squished on tiny screens, while
+        still being flexible on large ones. Now, let’s talk about the rows. The
+        grid-auto-rows: minmax(100px, auto); rule tells the browser how tall
+        each automatically created row should be. In this case, it means every
+        new row should be at least 100 pixels tall, but it can grow taller if
+        the content inside that row is too big to fit. This helps prevent
+        overlapping or cut-off content. So, for example, if one grid item has
+        just a short sentence, it will only take up 100 pixels in height. But if
+        another item has a long paragraph or a tall image, the row will
+        automatically grow taller to fit everything nicely. This keeps your
+        design looking neat and clean without having to manually set heights for
+        every row. Overall, this grid setup is great for building responsive
+        websites because it allows your layout to adapt beautifully across
+        different devices and screen sizes. You don’t have to worry about your
+        content overflowing or looking messy. It also helps you avoid writing
+        lots of extra media queries, because the layout automatically adjusts
+        based on the space and the content. This kind of smart layout is a key
+        part of modern web design, and using it means you're building your
+        website the right way — clean, flexible, and future-proof.
+      </div>
+      <div class="grid-item two">Two</div>
+      <div class="grid-item three">Three</div>
+      <div class="grid-item four">Four</div>
+    </div>
+
+    <!-- TASK4 -->
+    <div class="container">
+      <div class="card">
+        <img
+          alt="a single red balloon"
+          src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg"
+        />
+        <ul class="tags">
+          <li>balloon</li>
+          <li>red</li>
+          <li>sky</li>
+          <li>blue</li>
+          <li>Hot air balloon</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img
+          alt="balloons over some houses"
+          src="https://mdn.github.io/shared-assets/images/examples/balloons2.jpg"
+        />
+        <ul class="tags">
+          <li>balloons</li>
+          <li>houses</li>
+          <li>train</li>
+          <li>harborside</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img
+          alt="close-up of balloons inflating"
+          src="https://mdn.github.io/shared-assets/images/examples/balloons3.jpg"
+        />
+        <ul class="tags">
+          <li>balloons</li>
+          <li>inflating</li>
+          <li>green</li>
+          <li>blue</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img
+          alt="a balloon in the sun"
+          src="https://mdn.github.io/shared-assets/images/examples/balloons4.jpg"
+        />
+        <ul class="tags">
+          <li>balloon</li>
+          <li>sun</li>
+          <li>sky</li>
+          <li>summer</li>
+          <li>bright</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
