@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Styling</title>
+    <link rel="stylesheet" href="../css/advance.css" />
+  </head>
+  <body>
+    <form action="#">
+      <div class="select-wrapper">
+        <label for="fruits">Select box:</label>
+        <select name="fruits" id="fruits">
+          <option value="banana">Banana</option>
+          <option value="coconut">Coconut</option>
+          <option value="apple">Apple</option>
+          <option value="blueberry">Blueberry</option>
+        </select>
+        <span class="arrow"></span>
+      </div>
+
+      <div>
+        <label for="fruits" list="fruits">"Favorite fruit?" datalist:</label>
+        <datalist id="fruits">
+          <option value="banana">Banana</option>
+          <option value="coconut">Coconut</option>
+          <option value="apple">Apple</option>
+          <option value="blueberry">Blueberry</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" />
+      </div>
+
+      <div>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" />
+      </div>
+
+      <div>
+        <label for="file">File Picker:</label>
+        <input type="file" id="file" name="file" />
+      </div>
+
+      <div>
+        <label for="progress">progress:</label>
+        <progress max="100" value="50">50 out of 100</progress>
+      </div>
+
+      <button type="submit">Submit</button>
+      <!-- <input type="text" value="Divine"> -->
+    </form>
+
+    <form>
+      <p class="pet-wrapper">
+        <label for="pet-select">Select pet:</label>
+        <select id="pet-select">
+          <!-- <button>
+            <selectedcontent></selectedcontent>
+          </button> -->
+
+          <option value="">Please select a pet</option>
+          <option value="cat">
+            <span class="icon" aria-hidden="true">🐱</span
+            ><span class="option-label">Cat</span>
+          </option>
+          <option value="dog">
+            <span class="icon" aria-hidden="true">🐶</span
+            ><span class="option-label">Dog</span>
+          </option>
+          <option value="hamster">
+            <span class="icon" aria-hidden="true">🐹</span
+            ><span class="option-label">Hamster</span>
+          </option>
+          <option value="chicken">
+            <span class="icon" aria-hidden="true">🐔</span
+            ><span class="option-label">Chicken</span>
+          </option>
+          <option value="fish">
+            <span class="icon" aria-hidden="true">🐟</span
+            ><span class="option-label">Fish</span>
+          </option>
+          <option value="snake">
+            <span class="icon" aria-hidden="true">🐍</span
+            ><span class="option-label">Snake</span>
+          </option>
+        </select>
+        <span class="arrow"></span>
+      </p>
+    </form>
+  </body>
+</html>

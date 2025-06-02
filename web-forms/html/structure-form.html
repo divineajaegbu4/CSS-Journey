@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/structure-form.css" />
+  </head>
+  <body>
+    <!-- Warning: It's strictly forbidden to nest a form inside another form. Nesting
+    can cause forms to behave unpredictably, so it is a bad idea. -->
+
+    <!-- 
+     As you can see in the examples, it's common practice to wrap a label and
+      its widget with a <li> element within a <ul> or <ol> list. <p> and 
+        <div> elements are also commonly used. Lists are recommended for 
+    structuring multiple checkboxes or radio buttons. -->
+
+    <!-- Above all, it is up to you to find a comfortable coding style that 
+    results in accessible, usable forms. Each separate section of 
+    functionality should be contained in a separate <section> element, 
+        with <fieldset> elements to contain radio buttons. -->
+
+    <form>
+      <fieldset>
+        <legend>Fruit juice size</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small" />
+          <label for="size_1">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium" />
+          <label for="size_2">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Large</label>
+        </p>
+      </fieldset>
+
+      <p>
+        Required fields are followed by <span aria-label="required">*</span>.
+      </p>
+
+      <!-- So this: -->
+      <!--div>
+  <label for="username">Name:</label>
+  <input id="username" type="text" name="username" required>
+  <label for="username"><span aria-label="required">*</label>
+</div-->
+
+      <!-- would be better done like this: -->
+      <!--div>
+  <label for="username">
+    <span>Name:</span>
+    <input id="username" type="text" name="username" required>
+    <span aria-label="required">*</span>
+  </label>
+</div-->
+
+      <!-- <button aria-label="Close menu">
+  <img src="close-icon.png" alt="" />
+</button> -->
+
+      <!-- ✅ Where It’s Commonly Used:
+Buttons with only icons.
+
+Links with images and no text.
+
+Input fields with no visible label.
+
+🛑 Do Not Use If:
+You already have a visible <label> or clear text inside the element. Then screen readers will use that instead. -->
+
+      <!-- But this is probably best: -->
+      <div>
+        <label for="username">Name: <span aria-label="required">*</span></label>
+        <input id="username" type="text" name="username" required />
+      </div>
+    </form>
+
+    <form action="../../text-styling/html/challenge.html">
+      <section>
+        <h2>Contact information</h2>
+        <fieldset>
+          <legend>Title</legend>
+          <ul>
+            <li>
+              <label for="title_1">
+                <input type="radio" id="title_1" name="title" value="A" />
+                Ace
+              </label>
+            </li>
+            <li>
+              <label for="title_2">
+                <input type="radio" id="title_2" name="title" value="K" />
+                King
+              </label>
+            </li>
+            <li>
+              <label for="title_3">
+                <input type="radio" id="title_3" name="title" value="Q" />
+                Queen
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="name">
+            <span>Name: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="text" id="name" name="username" required />
+        </p>
+        <p>
+          <label for="mail">
+            <span>Email: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="email" id="mail" name="user-mail" required />
+        </p>
+        <p>
+          <label for="pwd">
+            <span>Password: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="password" id="pwd" name="password" required />
+        </p>
+      </section>
+
+      <section>
+        <h2>Payment information</h2>
+        <p>
+          <label for="card">
+            <span>Card type:</span>
+          </label>
+          <select id="card" name="user-card">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="number">
+            <span>Card number:</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="tel" id="number" name="card-number" required />
+        </p>
+        <p>
+          <label for="expiration">
+            <span>Expiration date:</span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input
+            type="text"
+            id="expiration"
+            name="expiration"
+            required
+            placeholder="MM/YY"
+            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"
+          />
+        </p>
+      </section>
+      <section>
+        <p>
+          <button type="submit">Validate the payment</button>
+        </p>
+      </section>
+    </form>
+  </body>
+</html>

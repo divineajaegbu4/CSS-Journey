@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/other-form-controls.css" />
+  </head>
+  <body>
+    <h1>Play with writing modes</h1>
+
+    <textarea cols="30" rows="8"></textarea>
+
+    <!-- Dropdown -->
+    <!DOCTYPE html>
+    <html lang="en-US">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Drop down content examples</title>
+      </head>
+
+      <body>
+        <form>
+          <p>
+            <label for="simple">A simple select box:</label>
+            <select id="simple" name="simple">
+              <option value="banana">Banana</option>
+              <option value="cherry">Cherry</option>
+              <option value="lemon" selected>Lemon</option>
+            </select>
+          </p>
+          <p>
+            <label for="groups">Select box with option groups:</label>
+            <select id="groups" name="groups">
+              <optgroup label="fruits">
+                <option value="banana">Banana</option>
+                <option value="cherry" selected>Cherry</option>
+                <option value="lemon">Lemon</option>
+              </optgroup>
+              <optgroup label="vegetables">
+                <option value="carrot">Carrot</option>
+                <option value="eggplant">Eggplant</option>
+                <option value="potato">Potato</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="multi">Select box allowing multiple selections:</label>
+            <select id="multi" name="multi" multiple size="2">
+              <option value="banana">Banana</option>
+              <option value="cherry">Cherry</option>
+              <option value="lemon">Lemon</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="myFruit">What's your favorite fruit?</label>
+            <input
+              type="text"
+              name="myFruit"
+              id="myFruit"
+              list="mySuggestion"
+            />
+            <datalist id="mySuggestion">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="blackberry">Blackberry</option>
+              <option value="blueberry">Blueberry</option>
+              <option value="lemon">Lemon</option>
+              <option value="lychee">Lychee</option>
+              <option value="peach">Peach</option>
+              <option value="pear">Pear</option>
+            </datalist>
+          </p>
+
+          <select id="multi" name="multi" multiple size="5">
+            <optgroup label="fruits">
+              <option>Banana</option>
+              <option selected>Cherry</option>
+              <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+          <p>
+            <label for="tempB">Choose a comfortable temperature:</label><br />
+            <input type="range" id="tempB" name="temp" list="values" />
+
+            <datalist id="values">
+              <option value="0" label="very cold!"></option>
+              <option value="25" label="cool"></option>
+              <option value="50" label="medium"></option>
+              <option value="75" label="getting warm!"></option>
+              <option value="100" label="hot!"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <button type="submit">Submit me!</button>
+          </p>
+
+          <!-- Other form features -->
+          <!-- There are a few other form features that are not as obvious as the
+          ones we have already mentioned, but still useful in some situations,
+          so we thought it would be worth giving them a brief mention. -->
+
+          <form>
+            <p>
+              <label for="file">Choose an image to upload</label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                accept="image/*"
+                multiple
+              />
+            </p>
+            <div>
+              <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp"
+                value="1286705410"
+              />
+            </div>
+            <p>
+              <input
+                type="image"
+                name="pos"
+                alt="Ramsbottom"
+                src="../../styling-basics/img/black-baby.jpeg"
+              />
+            </p>
+
+            <div>
+              <p>Download Progress:</p>
+              <progress max="100" value="75">75 out of 100</progress>
+
+              <p>Battery Health:</p>
+              <meter
+                min="10"
+                max="250"
+                value="75"
+                low="33"
+                high="66"
+                optimum="50"
+              >
+                75
+              </meter>
+            </div>
+
+          </form>
+        </form>
+      </body>
+    </html>
+  </body>
+</html>
